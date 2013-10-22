@@ -41,7 +41,7 @@ L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/
 }).addTo(map);
 
 map.addLayer(clusters);
-
+/*
 //If the document is ready start to load the cosm data
 $(document).ready(function($){
 	cosm.setKey("tT0xUa9Yy24qPaZXDgJi-lDmf3iSAKxvMEhJWDBleHpMWT0g");
@@ -79,7 +79,7 @@ function addAQE(results) {
 		}	
 	}
 	loadLANUV();
-}
+}*/
 
 //Adds the offical stationen.js script of LANUV to our website.
 function loadLANUV() {
@@ -108,12 +108,12 @@ clusters.on('dataLoadComplete', function() { layer.fire('data:loaded'); });
 clusters.on('click', function(e) {
 	$('#hint').css("visibility", "hidden");
 	
-	//Stop the COSM live feed
+/*	//Stop the COSM live feed
 	cosm.stop('#tempForm'); 
 	cosm.stop('#humForm');
 	cosm.stop('#no2Form');
 	cosm.stop('#coForm');
-
+*/
 	//Check what marker type is selected. If selectedMarker title is not a number a LANUV stations is selected else if it is a number a AQE is selected.
 	if (selectedMarker!= null && isNaN(selectedMarker.options.title)) {
 		selectedMarker.setIcon(lanuv);

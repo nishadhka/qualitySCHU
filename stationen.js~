@@ -1,0 +1,132 @@
+// JavaScript Document
+// wird für die Seite stat.htm benötigt
+//
+// Eigenschaft "disko": 
+//					0 = kontinuierliche Messung (Bild: Diagramm)
+//					1 = diskontinuierliche Messung (Bild: Reagenzgläser)
+//					2 = zur Zeit [noch] keine Messwerte (kein Bild)
+// *************************************************************************
+var stationen = new Object();
+
+
+
+stationen.VACW = new Object();
+stationen.VACW.kuerzel = "VACW";
+stationen.VACW.type = "Verkehr";
+stationen.VACW.name = "Aachen, Wilhelmstra&szlig;e";
+stationen.VACW.plz = "52070";
+stationen.VACW.longitude = 76.94113422571094;
+stationen.VACW.latitude = 11.15037248052486;
+stationen.VACW.address = "Aachen<br>Wilhelmstra&szlig;e 22-24";
+stationen.VACW.disko = 0;
+
+stationen.AABU = new Object();
+stationen.AABU.kuerzel = "POLA";
+stationen.AABU.type = "AWS";
+stationen.AABU.name = "Pollachi";
+stationen.AABU.plz = "52064";
+stationen.AABU.longitude = 77.01066815087034;
+stationen.AABU.latitude = 10.65728002412547;
+stationen.AABU.address = "Pollachi";
+stationen.AABU.disko = 0;
+
+stationen.BIEL = new Object();
+stationen.BIEL.kuerzel = "MDKI";
+stationen.BIEL.type = "AWS";
+stationen.BIEL.name = "Madukarai";
+stationen.BIEL.plz = "33607";
+stationen.BIEL.longitude = 76.95299032118155;
+stationen.BIEL.latitude = 10.91289000550696;
+stationen.BIEL.address = "Madukarai";
+stationen.BIEL.disko = 0;
+
+stationen.VBIS = new Object();
+stationen.VBIS.kuerzel = "KNKU;
+stationen.VBIS.type = "AWS";
+stationen.VBIS.name = "Kinathukadavu";
+stationen.VBIS.plz = "33615";
+stationen.VBIS.longitude = 77.01666651663963;
+stationen.VBIS.latitude = 10.81667057188987;
+stationen.VBIS.address = "Kinathukadavu";
+stationen.VBIS.disko = 0;
+
+stationen.BOST = new Object();
+stationen.BOST.kuerzel = "KRMI";
+stationen.BOST.type = "AWS";
+stationen.BOST.name = "Karamadai";
+stationen.BOST.plz = "44793";
+stationen.BOST.longitude = 76.95944399949092;
+stationen.BOST.latitude = 11.23972199971095;
+stationen.BOST.address = "Karamadai";
+stationen.BOST.disko = 1;
+
+stationen.BONN = new Object();
+stationen.BONN.kuerzel = "ANUR";
+stationen.BONN.type = "AWS";
+stationen.BONN.name = "Annur";
+stationen.BONN.plz = "53117";
+stationen.BONN.longitude = 77.10512760998314;
+stationen.BONN.latitude = 11.23393200691487;
+stationen.BONN.address = "Annur";
+stationen.BONN.disko = 0;
+
+stationen.BORG = new Object();
+stationen.BORG.kuerzel = "ANMI";
+stationen.BORG.type = "AWS";
+stationen.BORG.name = "Anamalai";
+stationen.BORG.plz = "45325";
+stationen.BORG.longitude = 76.93829896612112;
+stationen.BORG.latitude = 76.93829896612112;
+stationen.BORG.address = "Anamalai";
+stationen.BORG.disko = 0;
+
+stationen.VBOT = new Object();
+stationen.VBOT.kuerzel = "VBOT";
+stationen.VBOT.type = "AWS";
+stationen.VBOT.name = "Sarcarsamakulam";
+stationen.VBOT.plz = "46236";
+stationen.VBOT.longitude = 77.02246966357929;
+stationen.VBOT.latitude = 11.14116410926101;
+stationen.VBOT.address = "Sarcarsamakulam";
+stationen.VBOT.disko = 0;
+
+stationen.BOTT = new Object();
+stationen.BOTT.kuerzel = "STPT";
+stationen.BOTT.type = "village";
+stationen.BOTT.name = "Sultanpet";
+stationen.BOTT.plz = "46238";
+stationen.BOTT.longitude = 77.19739676235839;
+stationen.BOTT.latitude = 10.87713988868933;
+stationen.BOTT.address = "Sultanpet";
+stationen.BOTT.disko = 0;
+
+
+stationen.DATT = new Object();
+stationen.DATT.kuerzel = "SULR";
+stationen.DATT.type = "AWS";
+stationen.DATT.name = "Sulur";
+stationen.DATT.plz = "45711";
+stationen.DATT.longitude = 7.33136;
+stationen.DATT.latitude = 51.64138;
+stationen.DATT.address = "Sulur";
+stationen.DATT.disko = 0;
+
+stationen.DOB12 = new Object();
+stationen.DOB12.kuerzel = "TNAU";
+stationen.DOB12.type = "AWS";
+stationen.DOB12.name = "TNAU";
+stationen.DOB12.plz = "44139";
+stationen.DOB12.longitude = 76.93285501513489;
+stationen.DOB12.latitude = 11.01327712985975;
+stationen.DOB12.address = "TNAU";
+stationen.DOB12.disko = 1;
+
+stationen.VDOM = new Object();
+stationen.VDOM.kuerzel = "POLS";
+stationen.VDOM.type = "AWS";
+stationen.VDOM.name = "Polllachi South";
+stationen.VDOM.plz = "44145";
+stationen.VDOM.longitude = 77.0157268069908;
+stationen.VDOM.latitude = 10.66051295308319;
+stationen.VDOM.address = "Polllachi South";
+stationen.VDOM.disko = 0;
